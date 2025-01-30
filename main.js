@@ -42,4 +42,13 @@ $(function () {
         $(this).next('.answer').slideToggle(); // 以降の要素を実行する
         $(this).toggleClass("open");
     });
+  
+// ページ読み込み完了時にバナーのブロックを表示
+    window.onload = function(){
+    $("#overview").show();  
+    }
+    /* ×ボタンが押されたとき、バナーブロックを非表示 */
+    $("#close").on("click", function(){
+        $("#overview").hide();
+    });
 });
