@@ -1557,3 +1557,50 @@ img{
 .to-top span:last-child{
     transform: rotate(-45deg) translate(-3px, -3px);
 }
+
+/* overview */
+.overview {
+    width: 100%;       /* 幅いっぱい */
+    height: 100vh;     /* 高さいっぱい */
+    background: rgba(0, 0, 0, 0.7); /* 背景を薄暗くする */
+    display: none;     /* デフォルトは非表示 */
+    position: fixed;   /* 表示位置を絶対指定して固定 */
+    top: 0;            /* 表示位置を上から0pxに指定 */
+    left: 0;           /* 表示位置を左から0pxに指定 */
+    z-index: 10;
+}
+
+.overview__wrap {
+    position: absolute; /* 相対位置とする、かつcloseの基準値になる。 */
+    top: 50%;           /* 表示位置を上から50%に指定 */
+    left: 50%;          /* 表示位置を左から50%に指定 */
+    transform: translate(-50%, -50%); /* 上下中央にするため要素の半分分だけ左上に戻す */
+    width: 30%;
+}
+.overview__wrap__close {
+    background: #00123A;   /* 背景色を白に指定 */
+    position: absolute; /* 相対位置とする */
+    top: -45px;         /* いい感じの位置に指定 */
+    right: 0px;         /* 同様 */
+    cursor: pointer;    /* hover時にカーソルを指の形にする */
+    width: 40px;
+    height: 40px;
+    
+}
+.overview__wrap__close::before,
+.overview__wrap__close::after {
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: 25px;
+    background: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.overview__wrap__close::before{
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.overview__wrap__close::after{
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
