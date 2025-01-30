@@ -303,7 +303,7 @@ img{
     background:  rgba(255,82,56,1);
     background: linear-gradient(138deg,  rgba(255,82,56,1) 75%, rgba(255,255,255,1) 90%,  rgba(255,82,56,1) 100%);
     background-size: 600% 100%;
-    animation-delay: .25s;
+/*     animation-delay: .25s; */
 }
 .tv__button_item_link:hover{
     animation: none;
