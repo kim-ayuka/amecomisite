@@ -43,7 +43,7 @@ img{
 .section--dots::after{
     position: absolute;
     content: "";
-    background-image: url(all_dots-bg.png);
+    background-image: url(/all_dots-bg.png);
     background-repeat: repeat;
     background-size: 100%;
     width: 100%;
