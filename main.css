@@ -1139,7 +1139,7 @@ img{
     position: absolute;
     content: "";
     top: -45px;
-    left: 115px;
+    left: 105px;
     z-index: 2;
     counter-increment: number 1;
     content: counter(number);
